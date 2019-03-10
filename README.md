@@ -10,11 +10,11 @@ The project consists of these parts:
 5.  Steps to visualize the data in a chart in real time using MQTT-Spy.
 
 ## Hardware
-nodeMCU (ESP8266) module
-MPU6050 sensor
-Cell phone charger or powerbank
-Windows laptop
-WiFi router
+* nodeMCU (ESP8266) module
+* MPU6050 sensor
+* Cell phone charger or powerbank
+* Windows laptop
+* WiFi router
 
 ## Connections
 ![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/images/MPU6050_ESP8266.PNG)

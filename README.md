@@ -78,6 +78,20 @@ This data can then be imported into Excel as a CSV formatted input.
 
 To visualize the data in real time, MQTT-spy software can be used.  Download a JAR file of MQTT-Spy from https://github.com/kamilfb/mqtt-spy/wiki/Downloads .
 
-Open the JAR file.
+Open the JAR file.  Click on Connections->New Connections.  Enter the IP address of the MQTT broker (192.168.0.114) in the 'Server URI' field and then click on 'Open Connection'.
+
+![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/images/mqtt-spy-new-connection.PNG)
+
+A connection to the MQTT broker is now opened.  Subscribe to the MQTT topic by clicking on 'New' in 'Subscriptions and received messages' section.  Enter the MQTT topic, '/mpu6050_1/json', in the 'Topic filter' field and click Subscribe.
+
+![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/images/mqtt-spy-new-connection.PNG)
+
+Now you should be able to see the messages received from the nodeMCU containing the acceleration values in X, Y and Z directions.  To chart this data, right click on the '/mpu6050_1/json' topic in 'Received messages summary' section and click on Charts->Show payload values for this topic.  In the 'Message content chart' window, click on the 'Add' button.  Enter the values as shown.  This is for the X axis.  Add for Y and Z axes too.
+
+![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/images/mqtt-spy-chart_configure.PNG)
+
+Once all the axes are configured, the incoming acceleration values will be displayed in the Message Content Chart window.
+
+![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/images/mqtt-spy-chart_display.PNG)
 
 

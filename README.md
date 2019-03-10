@@ -49,6 +49,8 @@ Update the 'ssid' to the SSID and 'password' to the password of your WiFI router
 Update the 'mqtt_server' to the IP of the computer running the MQTT broker.  More details of MQTT broker in the next section.
 In case there is more than one circuit in your environment, update the 'DEVICE_NAME', 'mqtt_topic_csv' and 'mqtt_topic_json' to be unique for each circuit.
 
+The sketch sends the same data on two different MQTT topics.  In the first topic (/mpu6050_1/csv), it is sent as a CSV (comma separated values) string.  In the second topic (/mpu6050_1/json), it is sent as a JSON string.
+
 Upload the sketch to the nodeMCU module.  Once the sketch is uploaded, the nodeMCU will start reading vibration data from the MPU6050 sensor and start sending MQTT messages.
 
 ## MQTT broker
@@ -64,7 +66,18 @@ In each line of the above output, the first value is the timestamp, followed by 
 
 To capture the MQTT data to a file, the following command can be used.  Once the command is issued, it will collect and save the data till the command is stopped by issuing a 'Ctrl-C'.  
 Issue a separate command to capture data from each sensor.
+
 ![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/images/mosquitto_sub_save_to_file.PNG)
 
-After 
+After stopping the above command by issuing a 'Ctrl-C', the text file can be opened in Notepad to see the saved data.
+
+
+This data can then be imported into Excel as a CSV formatted input.
+
 ## Visualize real time data in MQTT-Spy
+
+To visualize the data in real time, MQTT-spy software can be used.  Download a JAR file of MQTT-Spy from https://github.com/kamilfb/mqtt-spy/wiki/Downloads .
+
+Open the JAR file.
+
+

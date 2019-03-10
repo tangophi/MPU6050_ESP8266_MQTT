@@ -17,3 +17,4 @@ Windows laptop
 WiFi router
 
 ## Connections
+![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/MPU6050_ESP8266.PNG)

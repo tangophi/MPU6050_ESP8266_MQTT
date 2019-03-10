@@ -33,6 +33,7 @@ The Arduino sketch to upload to the nodeMCU module is available in the MPU6050_D
 ### Modify Sketch for your environment
 In the MPU6050_DMP6_ESP8266_MQTT.ino file, find these lines:
 
+```
 const char DEVICE_NAME[] = "mpu6050_1";
 const char mqtt_topic_csv[] = "/mpu6050_1/csv";
 const char mqtt_topic_json[] = "/mpu6050_1/json";
@@ -42,6 +43,7 @@ const char* password = "YYYYYYY";
 
 // IP address of your MQTT server
 const char* mqtt_server = "192.168.0.114";
+```
 
 Update the 'ssid' to the SSID and 'password' to the password of your WiFI router.
 Update the 'mqtt_server' to the IP of the computer running the MQTT broker.  More details of MQTT broker in the next section.

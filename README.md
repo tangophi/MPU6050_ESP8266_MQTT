@@ -71,6 +71,7 @@ Issue a separate command to capture data from each sensor.
 
 After stopping the above command by issuing a 'Ctrl-C', the text file can be opened in Notepad to see the saved data.
 
+![alt tag](https://github.com/tangophi/MPU6050_ESP8266_MQTT/blob/master/images/sensor1.txt.PNG)
 
 This data can then be imported into Excel as a CSV formatted input.
 

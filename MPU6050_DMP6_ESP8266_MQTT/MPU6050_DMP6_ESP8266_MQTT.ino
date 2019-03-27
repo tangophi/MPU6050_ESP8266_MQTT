@@ -403,7 +403,8 @@ void reconnect() {
   while (!mqttClient.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (mqttClient.connect("arduinoClient")){
+//    if (mqttClient.connect("arduinoClient")){
+    if (mqttClient.connect(DEVICE_NAME)){
       Serial.println("connected");
     } 
     else {
